@@ -49,8 +49,9 @@ function App() {
         <div className="aside-content">
           <h2 className="confirm">Confirme sua presença</h2>
           <p>
-            Confirme sua presença e ajude o anfitrião a organizar a festa Prazo
-            para confirmações até 17/07/2022.
+            Confirme sua presença e ajude a organizar a festa.
+            <br/> 
+            Prazo para confirmações até <strong>10.07.2022</strong>.
           </p>
         </div>
 
@@ -59,7 +60,7 @@ function App() {
           <div className="details">
             <FiCalendar />
             <div>
-              <p>17.07.2022, a partir de 14:00.</p>
+              <p>Dia 17.07.2022, a partir de 14:00 horas.</p>
               <div className="atcb">
                 {"{"}
                 "name":"ANIVERSÁRIO DO ENDRY", "description":"Estou muito
