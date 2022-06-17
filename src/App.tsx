@@ -1,6 +1,6 @@
 import { atcb_action, atcb_init } from "add-to-calendar-button";
 import { useEffect, useState } from "react";
-import { FiCalendar, FiMapPin } from "react-icons/fi";
+import { FiPhone, FiCalendar, FiMapPin } from "react-icons/fi";
 
 import "add-to-calendar-button/assets/css/atcb.min.css";
 import "animate.css";
@@ -10,18 +10,16 @@ import { func } from "prop-types";
 function App() {
   const [openInvite, setOpenInvite] = useState(false);
 
-  function handleOpenEnvelope(){
-    
-    setTimeout(()=>{
-      document.getElementById('envelope-bg')?.classList.add('leave-bg')
-      setTimeout(()=>{
-        document.getElementById('envelope')?.classList.remove('leave')
-        document.getElementById('envelope-bg')?.classList.remove('leave-bg')
-        setOpenInvite(true)
-      },500)
-    },1600)
-    document.getElementById('envelope')?.classList.add('leave')
-    
+  function handleOpenEnvelope() {
+    setTimeout(() => {
+      document.getElementById("envelope-bg")?.classList.add("leave-bg");
+      setTimeout(() => {
+        document.getElementById("envelope")?.classList.remove("leave");
+        document.getElementById("envelope-bg")?.classList.remove("leave-bg");
+        setOpenInvite(true);
+      }, 500);
+    }, 1600);
+    document.getElementById("envelope")?.classList.add("leave");
   }
   useEffect(() => {
     if (openInvite) {
@@ -48,11 +46,16 @@ function App() {
         <h1>Aniversário do Endry</h1>
         <div className="aside-content">
           <h2 className="confirm">Confirme sua presença</h2>
-          <p>
-            Confirme sua presença e ajude a organizar a festa.
-            <br/> 
-            Prazo para confirmações até <strong>10.07.2022</strong>.
-          </p>
+          <div className="details">
+            <FiPhone />
+            <div>
+              <p>
+                (+351) 960 057 264 - Chamada ou WhatsApp.
+                <br />
+                Prazo para confirmações até <strong>10.07.2022</strong>.
+              </p>
+            </div>
+          </div>
         </div>
 
         <div className="aside-content">
