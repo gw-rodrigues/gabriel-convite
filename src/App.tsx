@@ -18,7 +18,7 @@ function App() {
         document.getElementById("envelope-bg")?.classList.remove("leave-bg");
         setOpenInvite(true);
       }, 500);
-    }, 1600);
+    }, 1500);
     document.getElementById("envelope")?.classList.add("leave");
   }
   useEffect(() => {
