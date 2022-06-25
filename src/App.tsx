@@ -70,7 +70,7 @@ function App() {
                 ansioso por contar contigo no meu aniversário. A sua presença é
                 suficiente para mim, mas caso queria me dar um presente este
                 pode ser em dinheiro. Convite:→
-                [url]https://github.com/jekuer/add-to-calendar-button[/url]",
+                [url]https://endry-convite.vercel.app/[/url]",
                 "startDate":"2022-07-17T14:00", "endDate":"2022-07-17T18:00",
                 "location":"Quinta Pedagógica Inclusiva - CASCI, R. do Casci
                 nº36B, 3830-355, Portugal", "label":"Adicionar ao calendário",

@@ -15,11 +15,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   min-height: 100vh;
   background-color: rgb(33,255,240);
   background: linear-gradient(180deg, rgba(33,255,240,1) 0%, rgba(10,176,247,1) 100%);
   background-attachment: fixed;
+  overflow-x: hidden;
 }
 
 code {
