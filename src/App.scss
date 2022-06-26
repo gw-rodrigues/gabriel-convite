@@ -11,7 +11,7 @@
   height: 100vh;
 
   text-align: center;
-  background: url("fundo.png") no-repeat center;
+  background: url("/fundo.png") no-repeat center;
 
   .envelope {
     width: 50%;
@@ -263,6 +263,9 @@
 @media only screen and (max-width: 720px) {
   html {
     font-size: 87.5%;
+  }
+  .container aside .aside-content h2 {
+    font-size: 1.4rem;
   }
 }
 
