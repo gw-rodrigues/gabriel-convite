@@ -29,7 +29,6 @@ function App() {
 
   return !openInvite ? (
     <main id="envelope-bg" className="container-intro">
-      <img className="fundo" src="/fundo.png" alt="fundo" />
       <div id="envelope">
         <button onClick={handleOpenEnvelope} type="button" className="envelope">
           <img src="/envelope.jpeg" alt="envelope" />
