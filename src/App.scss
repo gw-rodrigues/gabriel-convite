@@ -90,7 +90,7 @@
     justify-items: center;
 
     img {
-      width: 90%;
+      width: 95%;
       height: auto;
 
       border: 3px solid white;
@@ -114,7 +114,7 @@
 
     h1 {
       text-transform: uppercase;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       margin: 1.2rem;
       color: #936e36;
       text-shadow: 2px 2px 2px rgba($color: #fff, $alpha: 0.5);
@@ -241,6 +241,7 @@
     max-width: 100vw;
     flex-direction: column;
     align-items: center;
+    padding-right: 1rem;
 
     article,
     aside {
@@ -267,11 +268,17 @@
   .container aside .aside-content h2 {
     font-size: 1.4rem;
   }
+
+  .container {
+    aside {
+      width: 90%;
+    }
+  }
 }
 
 @media only screen and (max-width: 340px) {
   .container {
-    padding: 0.5rem;
+    padding: 2rem;
 
     article img {
       width: 97%;
@@ -288,6 +295,26 @@
       .details {
         flex-direction: column;
       }
+    }
+
+    aside h1 {
+      font-size: 1.6rem;
+      margin-bottom: 3rem;
+    }
+
+    aside .aside-content h2 {
+      font-size: 0.9rem;
+    }
+    .atcb_button {
+      font-size: 0.7rem !important;
+    }
+
+    aside .aside-content .details h3 {
+      font-size: 0.9rem;
+    }
+
+    aside .aside-content {
+      font-size: 0.7rem;
     }
   }
 }
