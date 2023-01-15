@@ -84,6 +84,7 @@ function App() {
             <FiMapPin />
             <div>
               <h3>Igreja Matriz de Novo Cruzeiro</h3>
+              <br />
               <a target="_blank" href="https://goo.gl/maps/XzijNdn72hTboyW68">
                 Ver no mapa do google
               </a>
