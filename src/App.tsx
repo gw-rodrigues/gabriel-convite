@@ -1,31 +1,31 @@
-import { atcb_action, atcb_init } from "add-to-calendar-button";
-import { useEffect, useState } from "react";
-import { FiPhone, FiCalendar, FiMapPin } from "react-icons/fi";
+import { atcb_action, atcb_init } from 'add-to-calendar-button'
+import { useEffect, useState } from 'react'
+import { FiPhone, FiCalendar, FiMapPin } from 'react-icons/fi'
 
-import "add-to-calendar-button/assets/css/atcb.min.css";
-import "animate.css";
-import "./App.scss";
-import { func } from "prop-types";
+import 'add-to-calendar-button/assets/css/atcb.min.css'
+import 'animate.css'
+import './App.scss'
+import { func } from 'prop-types'
 
 function App() {
-  const [openInvite, setOpenInvite] = useState(false);
+  const [openInvite, setOpenInvite] = useState(false)
 
   function handleOpenEnvelope() {
     setTimeout(() => {
-      document.getElementById("envelope-bg")?.classList.add("leave-bg");
+      document.getElementById('envelope-bg')?.classList.add('leave-bg')
       setTimeout(() => {
-        document.getElementById("envelope")?.classList.remove("leave");
-        document.getElementById("envelope-bg")?.classList.remove("leave-bg");
-        setOpenInvite(true);
-      }, 500);
-    }, 1500);
-    document.getElementById("envelope")?.classList.add("leave");
+        document.getElementById('envelope')?.classList.remove('leave')
+        document.getElementById('envelope-bg')?.classList.remove('leave-bg')
+        setOpenInvite(true)
+      }, 500)
+    }, 1500)
+    document.getElementById('envelope')?.classList.add('leave')
   }
   useEffect(() => {
     if (openInvite) {
-      atcb_init();
+      atcb_init()
     }
-  }, [openInvite]);
+  }, [openInvite])
 
   return !openInvite ? (
     <main id="envelope-bg" className="container-intro">
@@ -42,17 +42,16 @@ function App() {
         <img src="/invite.jpeg" alt="invite" />
       </article>
       <aside>
-        <h1>Aniversário do Endry</h1>
+        <h1>Batizado do Lucas</h1>
         <div className="aside-content">
-          <h2 className="confirm">Confirme sua presença</h2>
+          <h2 className="confirm">Meu Aniversário</h2>
           <div className="details">
-            <FiPhone />
             <div>
               <p>
-                (+351) 960 057 264 - Chamada ou WhatsApp.
-                <br />
-                Prazo para confirmações até <strong>10.07.2022</strong>.
+                Após o Batismo, vamos comemorar o meu um aninho na casa da minha
+                vovó Beta.
               </p>
+              <p>Conto com a sua presença.</p>
             </div>
           </div>
         </div>
@@ -62,20 +61,19 @@ function App() {
           <div className="details">
             <FiCalendar />
             <div>
-              <p>Dia 17.07.2022, a partir de 14:00 horas.</p>
+              <p>Dia 29.01.2023, a partir de 08:00 horas.</p>
               <div className="atcb">
-                {"{"}
-                "name":"ANIVERSÁRIO DO ENDRY", "description":"Estou muito
-                ansioso por contar contigo no meu aniversário. A sua presença é
-                suficiente para mim, mas caso queria me dar um presente este
-                pode ser em dinheiro. Convite:→
-                [url]https://endry-convite.vercel.app/[/url]",
-                "startDate":"2022-07-17T14:00", "endDate":"2022-07-17T18:00",
-                "location":"Quinta Pedagógica Inclusiva - CASCI, R. do Casci
-                nº36B, 3830-355, Portugal", "label":"Adicionar ao calendário",
-                "options":[ "Apple", "Google", "Outlook.com" ],
-                "timeZone":"Europe/Berlin", "inline":true, "trigger":"click"
-                {"}"}
+                {'{'}
+                "name":"BATIZADO DO LUCAS", "description":"Chegou o dia do meu
+                batizado e papai do céu vai me abençoar. Espero voces ness dia
+                especial. Convite:→
+                [url]https://lucas-convite.vercel.app/[/url]",
+                "startDate":"2023-01-29T08:00", "endDate":"2023-01-29T18:00",
+                "location":"R. Davi Mussi, 35 - Novo Cruzeiro, MG, 39820-000,
+                Brasil", "label":"Adicionar ao calendário", "options":[ "Apple",
+                "Google", "Outlook.com" ], "timeZone":"Europe/Berlin",
+                "inline":true, "trigger":"click"
+                {'}'}
               </div>
             </div>
           </div>
@@ -85,9 +83,8 @@ function App() {
           <div className="details">
             <FiMapPin />
             <div>
-              <h3>Quinta Pedagógica Inclusiva - CASCI</h3>
-              <p>R. do Casci nº36B, 3830-355, Portugal.</p>
-              <a target="_blank" href="https://goo.gl/maps/imhRaW48FJaqLUbg7">
+              <h3>Igreja Matriz de Novo Cruzeiro</h3>
+              <a target="_blank" href="https://goo.gl/maps/XzijNdn72hTboyW68">
                 Ver no mapa do google
               </a>
             </div>
@@ -95,10 +92,10 @@ function App() {
         </div>
       </aside>
       {/* <section className="map">
-        <<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.421994773179!2d-8.703594984522212!3d40.62057467934199!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23bdf919ca9fa7%3A0x48fc62a532512393!2sQuinta%20Pedag%C3%B3gica%20Inclusiva%20-%20CASCI!5e0!3m2!1spt-PT!2sde!4v1655399071998!5m2!1spt-PT!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63607526.30450975!2d-55.750230280919084!3d13.331897585614913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb3212bcee9c047%3A0xb6d0d580599b6df7!2sIgreja%20Matriz%20Par%C3%B3quia%20de%20S%C3%A3o%20Bento!5e0!3m2!1spt-BR!2sde!4v1673810972792!5m2!1spt-BR!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section> */}
     </main>
-  );
+  )
 }
 
-export default App;
+export default App
