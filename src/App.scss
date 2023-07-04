@@ -35,14 +35,14 @@
     }
 
     &:hover img {
-      border: 4px solid rgba(255, 165, 0, 0.9);
+      border: 4px solid rgba(170, 255, 0, 0.9);
     }
 
     img {
       width: 100%;
       height: auto;
       box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-      border: 4px solid rgba(255, 214, 118, 0.5);
+      border: 4px solid rgba(198, 255, 118, 0.5);
       border-radius: 25px;
       z-index: 1;
       transition: border 0.5s;
